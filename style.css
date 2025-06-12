@@ -1,0 +1,218 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.888;
+    color: #333;
+    background: linear-gradient(to bottom right, #ffe0d6, #fff3e0), 
+                url(imagesssss.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 0;
+}
+
+/* Typography */
+p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: #c0392b; /* Deep red */
+    margin-bottom: 0.5em;
+}
+.indicator, h1, h2, h3 {
+    color: #e67e22;
+    text-shadow: 
+        -1px -1px 0 #fff3e0,  
+        1px -1px 0 #fff3e0,
+        -1px 1px 0 #fff3e0,
+        1px 1px 0 #fff3e0;
+}
+
+/* Links */
+a:link, a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e67e22; /* Orange */
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: underline;
+    color: #ff6f00; /* Bright orange */
+}
+
+abbr {
+    border-bottom: none;
+}
+
+/* Layout Containers */
+.page-wrapper {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2rem 3rem;
+    position: relative;
+    margin: 2rem auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.intro {
+    min-width: 470px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    padding-top: 20px;
+    margin-bottom: 2rem;
+}
+
+header h1,
+header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e74c3c; /* Red */
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    color: #ff8a65; /* Light orange */
+    margin-top: 10px;
+}
+
+/* Sidebar (optional) */
+.sidebar {
+    display: none; /* Hide if not used */
+}
+
+/* Summary Box */
+.summary {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.summary p {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 2;
+    color: #4b4b4b;
+}
+
+/* Content Sections */
+.preamble, .supporting {
+    padding: 1rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9em;
+    color: #5a5a5a;
+}
+
+footer a {
+    margin-right: 20px;
+    color: #d84315; /* Deep orange */
+}
+
+/* Sidebar Container */
+.sidebar {
+    display: block; /* Make sure it's visible */
+    background-color: #fff0e0;
+    border-left: 4px solid #ffab91;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Wrapper inside sidebar */
+.sidebar .wrapper {
+    max-width: 100%;
+}
+
+/* Section Headings */
+.sidebar h3 {
+    font-size: 1.2rem;
+    color: #c0392b;
+    border-bottom: 2px solid #ffc9b3;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Design selection links */
+.design-selection ul,
+.design-archives ul,
+.zen-resources ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.design-selection li,
+.design-archives li,
+.zen-resources li {
+    margin-bottom: 1rem;
+}
+
+/* Designer + design name links */
+.design-name,
+.designer-name {
+    display: inline-block;
+    color: #e74c3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.design-name:hover,
+.designer-name:hover {
+    text-decoration: underline;
+    color: #ff6f00;
+}
+
+/* Archives and Resources links */
+.sidebar a {
+    color: #d84315;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #ffb74d;
+    text-decoration: underline;
+}
+
+/* Resources and Archives list spacing */
+.zen-resources li,
+.design-archives li {
+    margin-bottom: 0.75rem;
+}
+
+.indicator {
+    font-weight: bold;
+    color: #e67e22;
+}
